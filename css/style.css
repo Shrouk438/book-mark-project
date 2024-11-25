@@ -1,0 +1,190 @@
+body {
+  background-color: #f7ecde;
+}
+.d-f {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  color: rgb(53, 46, 40);
+}
+h1::before {
+  content: "";
+  width: 269px;
+  height: 25%;
+  position: absolute;
+  /* left: 0; */
+  bottom: 10px;
+  background-color: #fec260;
+  z-index: -1;
+  transition: all 0.5s;
+}
+h1:hover::before {
+  height: 40%;
+}
+.borderh {
+  border: dotted 1px black;
+  width: 90%;
+  position: absolute;
+  left: 50px;
+  top: 200px;
+}
+p.p-text {
+  margin-top: 120px;
+  text-align: center;
+  font-size: 25px;
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+span.one {
+  color: #60a756;
+}
+span.two {
+  color: #72a853;
+}
+span.three {
+  color: #87a950;
+}
+i.one {
+  color: #3fa65c;
+}
+i.two {
+  color: #b4ac49;
+}
+/* input {
+  width: 80% !important;
+} */
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: orange;
+  box-shadow: 0 0 0 0.25rem rgb(255, 165, 0, 0.2);
+}
+h2 {
+  text-align: center;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#submit {
+  padding: 5px 50px;
+  border-radius: 5px;
+  background-color: #d1512d;
+  border: solid 3px #d1512d;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#submit:hover {
+  background-color: #bb4120;
+  border: #a03315 solid 1px;
+}
+.borderh2 {
+  border: dotted 1px black;
+  width: 90%;
+  position: relative;
+  left: 50px;
+  top: 20px;
+}
+
+.container {
+  width: 80%;
+}
+
+tr {
+  padding: 0.5rem 0.5rem;
+  border-bottom-width: 1px;
+}
+tbody,
+td,
+th,
+thead,
+tr {
+  border-style: solid;
+  
+}
+#visit {
+  background-color: #9eb23b;
+  color: white;
+  padding: 5px 30px;
+}
+#deleted {
+  color: white;
+  background-color: #eb1d36;
+  padding: 5px 30px;
+}
+#visit:hover {
+  background-color: #6e8018;
+}
+#delete {
+  color: #ffff;
+  background-color: #eb1d36;
+  transition: all 0.3s;
+}
+#delete:hover {
+  background-color: #ba081d;
+}
+.light-box-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.light-box {
+  width: 510px;
+  height: 200px;
+  padding-left: 30px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+}
+.p-light {
+  margin-top: 10px;
+}
+.round::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #60a756;
+  position: absolute;
+  left: 30px;
+}
+.round {
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: #a03315;
+  border-radius: 50%;
+  position: relative;
+}
+.round::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: teal;
+  position: absolute;
+  left: 60px;
+}
+.fa-circle-xmark {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+}
